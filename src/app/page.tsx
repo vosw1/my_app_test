@@ -5,15 +5,6 @@ import BottomNav from './components/bottom_nav';
 const HomePage: React.FC = () => {
   return (
     <div className="flex flex-col h-full">
-      {/* 검색바 */}
-      <div className="mb-4">
-        <input
-          type="text"
-          placeholder="검색..."
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </div>
-
       {/* 아이콘들 */}
       <div className="flex justify-around mb-4">
         <div className="p-2 bg-gray-200 rounded-full">아이콘1</div>
