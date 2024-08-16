@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
+import styles from './Item_list.module.css'; // CSS 모듈 파일 가져오기
 
 interface ItemProps {
   icon: React.ReactElement;
@@ -9,14 +10,11 @@ interface ItemProps {
 
 const Item: React.FC<ItemProps> = ({ icon, text, href }) => {
   return (
-    <Link
-      href={href}
-      className="flex flex-col items-center justify-center p-4 hover:bg-gray-700 text-white"
-    >
-      <div style={{ fontSize: '60px' }} className="flex items-center justify-center mb-2">
+    <Link href={href} className={styles.itemLink}>
+      <div className={styles.itemIcon}>
         {icon}
       </div>
-      <div style={{ fontSize: '30px' }} className="flex items-center justify-center">
+      <div className={styles.itemText}>
         {text}
       </div>
     </Link>

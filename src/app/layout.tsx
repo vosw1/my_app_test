@@ -16,11 +16,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <AppBar />
           {/* 검색바*/}
           <SearchBar />
-          {/* 아이콘*/}
-          
-          {/* 이벤트 배너 */}
-          
-          {/* 인기 쿠폰 */}
           
           {/* 메인 콘텐츠 */}
           <main className="flex-1 flex flex-col p-4">

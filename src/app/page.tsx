@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './components/footer';
+import ItemList from './components/item_list';
 
 
 const HomePage: React.FC = () => {
@@ -7,6 +8,12 @@ const HomePage: React.FC = () => {
     <div className="flex flex-col h-screen font-sans">
 
       {/* 메인 콘텐츠 */}
+        <ItemList />
+       {/* 아이콘*/}
+          
+          {/* 이벤트 배너 */}
+          
+          {/* 인기 쿠폰 */}
       <main className="flex-1 flex flex-col p-4">
         <div className="mb-4">
           <p className="text-lg font-semibold">여기는 페이지 내용입니다.</p>
