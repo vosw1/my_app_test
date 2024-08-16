@@ -14,14 +14,14 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="container mx-auto">
           {/* 앱바 */}
           <AppBar />
-          {/* 검색바*/}
+          {/* 검색바 */}
           <SearchBar />
           
           {/* 메인 콘텐츠 */}
           <main className="flex-1 flex flex-col p-4">
             {children}
           </main>
-      
+    
           {/* 바텀 네비게이션 */}
           <BottomNav />
         </div>

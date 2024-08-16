@@ -1,19 +1,25 @@
 import React from 'react';
-import Footer from './components/footer';
 import ItemList from './components/item_list';
+import EventBanner from './components/event_banner';
+import Footer from './components/footer';
 
+// 배너 데이터 정의
+const banners = [
+  { imageSrc: '/images/banner1.png', altText: 'Banner 1' },
+  { imageSrc: '/images/banner1.png', altText: 'Banner 2' },
+  { imageSrc: '/images/banner1.png', altText: 'Banner 3' },
+];
 
-const HomePage: React.FC = () => {
+export default function HomePage() {
   return (
     <div className="flex flex-col h-screen font-sans">
-
       {/* 메인 콘텐츠 */}
-        <ItemList />
-       {/* 아이콘*/}
-          
-          {/* 이벤트 배너 */}
-          
-          {/* 인기 쿠폰 */}
+      <ItemList />
+
+      {/* 이벤트 배너 */}
+      <EventBanner banners={banners} />
+
+      {/* 인기 쿠폰 */}
       <main className="flex-1 flex flex-col p-4">
         <div className="mb-4">
           <p className="text-lg font-semibold">여기는 페이지 내용입니다.</p>
@@ -32,11 +38,9 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </main>
-      
+
       {/* 푸터 */}
-        <Footer />
+      <Footer />
     </div>
   );
-};
-
-export default HomePage;
+}
