@@ -1,0 +1,66 @@
+/* AppBar.module.css */
+
+.header {
+    width: 480px;
+    width: 100%; /* 전체 화면 폭을 사용하여 중앙 정렬 */
+    margin: 0 auto; /* 화면 중앙 정렬 */
+}
+
+.appbar {
+  background-color: #ffffff; /* 흰색 배경 */
+  color: #333333; /* 텍스트 색상 */
+  padding: 16px; /* 여백 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.couponIcon {
+  width: 100px; /* 쿠폰 아이콘 크기 */
+  height: 5%; /* 쿠폰 아이콘 크기 */
+}
+
+.regionButton {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #ffffff; /* 버튼 배경색 */
+  border: none; /* 테두리 없애기 */
+}
+
+.regionText {
+  font-size: xx-large;
+  width: 200px;
+  font-weight: bold;
+  margin-right: 5px; /* 지역명과 화살표 간격 */
+}
+
+.dropdownMenu {
+  position: absolute;
+  width: 100px;
+  right: 42%;
+  align-items: center;
+  background-color: #ffffff; /* 버튼 배경색 */
+  border: none; /* 테두리 없애기 */
+}
+
+.dropdownItem {
+  font-size: xx-large;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #ffffff; /* 버튼 배경색 */
+  border: none; /* 테두리 없애기 */
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0; /* 드롭다운 항목 호버 색상 */
+}
+
+.notificationIcon {
+  width: 50px; /* 알림 아이콘 크기 */
+  height: 50px; /* 알림 아이콘 크기 */
+}
