@@ -19,12 +19,10 @@ const items = [
   { icon: <FontAwesomeIcon icon={faWrench} />, text: '설치/수리', href: '/installation-repair' },
   { icon: <FontAwesomeIcon icon={faWifi} />, text: '인터넷 가입', href: '/internet' },
   { icon: <FontAwesomeIcon icon={faMobileAlt} />, text: '모바일', href: '/mobile' },
-  { icon: <FontAwesomeIcon icon={faBuilding} />, text: '부동산', href: '/real-estate' },
   { icon: <FontAwesomeIcon icon={faBriefcase} />, text: '외주', href: '/outsourcing' },
   { icon: <FontAwesomeIcon icon={faCar} />, text: '자동차', href: '/car' },
   { icon: <FontAwesomeIcon icon={faCoffee} />, text: '렌탈', href: '/rental' },
   { icon: <FontAwesomeIcon icon={faUtensils} />, text: '음식점', href: '/restaurant' },
-  { icon: <FontAwesomeIcon icon={faShieldAlt} />, text: '보험', href: '/insurance' } 
 ];
 
 const ItemList: React.FC = () => {

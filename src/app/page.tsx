@@ -12,17 +12,18 @@ const banners = [
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col h-screen font-sans">
+    <div className="flex flex-col min-h-screen font-sans">
+
       {/* 메인 콘텐츠 */}
-      <ItemList />
-
-      {/* 이벤트 배너 */}
-      <EventBanner banners={banners} />
-
-      {/* 인기 쿠폰 */}
       <main className="flex-1 flex flex-col p-4">
+        <ItemList />
+      
+      {/* 이벤트 배너 */}
+        <EventBanner banners={banners} />
+
+        {/* 인기 쿠폰 */}
         <div className="mb-4">
-          <p className="text-lg font-semibold">여기는 페이지 내용입니다.</p>
+          <h1 className="text-lg font-semibold">인기 쿠폰</h1>
         </div>
         <div className="flex flex-col items-center">
           <div className="w-full max-w-sm bg-white shadow-md rounded-lg mb-4">
