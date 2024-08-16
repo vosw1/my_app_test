@@ -1,28 +1,34 @@
-import React from 'react';
-import { FaHome, FaList, FaCommentDots, FaUser } from 'react-icons/fa';
+'use client';
 
+import React from 'react';
+import { Box, IconButton, Typography } from '@mui/material';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+import PersonIcon from '@mui/icons-material/Person';
+import Link from 'next/link'; 
+import styles from './bottom_nav.module.css'; 
 const BottomNav: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4">
-      <div className="max-w-screen-lg mx-auto flex justify-around items-center">
-        <a href="#" className="flex flex-col items-center hover:underline">
-          <FaHome className="text-2xl mb-1" />
-          <div>홈</div>
-        </a>
-        <a href="#" className="flex flex-col items-center hover:underline">
-          <FaList className="text-2xl mb-1" />
-          <div>요청 내역</div>
-        </a>
-        <a href="#" className="flex flex-col items-center hover:underline">
-          <FaCommentDots className="text-2xl mb-1" />
-          <div>채팅</div>
-        </a>
-        <a href="#" className="flex flex-col items-center hover:underline">
-          <FaUser className="text-2xl mb-1" />
-          <div>내 정보</div>
-        </a>
-      </div>
-    </footer>
+    <Box className={styles.bottomNav}>
+      {[
+        { label: '홈', icon: <HomeOutlinedIcon className={styles.icon} />, href: '/' },
+        { label: '요청 내역', icon: <AssignmentIcon className={styles.icon} />, href: '/requests' },
+        { label: '채팅', icon: <ChatBubbleOutlineIcon className={styles.icon} />, href: '/chat' },
+        { label: '내 정보', icon: <PersonIcon className={styles.icon} />, href: '/profile' }
+      ].map((item) => (
+        <Box key={item.label} className={styles.navItem}>
+          <Link href={item.href}>
+            <IconButton aria-label={item.label} className={styles.icon}>
+              {item.icon}
+            </IconButton>
+            <Typography variant="caption" className={styles.text}>
+              {item.label}
+            </Typography>
+          </Link>
+        </Box>
+      ))}
+    </Box>
   );
 };
 

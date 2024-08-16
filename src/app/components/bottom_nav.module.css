@@ -1,0 +1,52 @@
+.bottomNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* 가로 크기 설정 */
+  height: 60px; /* 세로 크기 설정 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.icon {
+  font-size: 60px; /* 아이콘 크기 조정 */
+  color: gray; /* 기본 아이콘 색상 (그레이) */
+}
+
+.text {
+  color: gray; /* 기본 텍스트 색상 (그레이) */
+  margin-top: 0.5rem; /* 아이콘과 텍스트 사이의 간격 조정 */
+  font-size: 16px; /* 텍스트 크기 조정 */
+  line-height: 1.2; /* 텍스트의 줄 높이 조정 */
+}
+
+.navItem:hover .icon, .navItem:hover .text {
+  color: #0000FF; /* 호버 시 윈도우 블루 색상으로 변경 */
+}
+
+.navItem.selected .icon, .navItem.selected .text {
+  color: #0000FF; /* 선택된 상태에서 윈도우 블루 색상으로 변경 */
+}
+
+.navItem:hover {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navItem a {
+  text-decoration: none; /* 밑줄 제거 */
+}

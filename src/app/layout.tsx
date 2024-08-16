@@ -26,10 +26,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <main className="flex-1 flex flex-col p-4">
             {children}
           </main>
-          
-          {/* 푸터 */}
-          <Footer />
-          
+      
           {/* 바텀 네비게이션 */}
           <BottomNav />
         </div>
