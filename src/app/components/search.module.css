@@ -1,12 +1,14 @@
 /* search.module.css */
 .searchContainer {
     position: relative;
+    width: 680px;
     padding: 20px;
   }
   
   .searchInner {
     padding: 15px;
     display: flex;
+    width: 600px;
     align-items: center;
     border: 2px solid #007bff; /* 파란색 테두리 */
     border-radius: 0.5rem; /* 둥근 모서리 */

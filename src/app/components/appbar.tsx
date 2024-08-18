@@ -24,30 +24,28 @@ const AppBar: React.FC = () => {
       />
 
       {/* 지역 선택 버튼 */}
-      <div className="relative flex items-center">
+      <div className={styles.dropdownContainer}>
         <button
           onClick={() => setDropdownOpen(!isDropdownOpen)}
           className={styles.regionButton}
         >
           <div className={styles.regionText}>{selectedRegion}</div>
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg className={styles.dropdownIcon} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
 
-        {isDropdownOpen && (
-          <div className={styles.dropdownMenu}>
-            {regions.map(region => (
-              <button
-                key={region}
-                onClick={() => handleRegionSelect(region)}
-                className={styles.dropdownItem}
-              >
-                {region}
-              </button>
-            ))}
-          </div>
-        )}
+        <div className={`${styles.dropdownMenu} ${isDropdownOpen ? styles.show : ''}`}>
+          {regions.map(region => (
+            <button
+              key={region}
+              onClick={() => handleRegionSelect(region)}
+              className={`${styles.dropdownItem} ${region === selectedRegion ? styles.selectedDropdownItem : ''}`}
+            >
+              {region}
+            </button>
+          ))}
+        </div>
       </div>
       
       {/* 알림 아이콘 */}

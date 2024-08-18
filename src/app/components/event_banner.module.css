@@ -2,9 +2,9 @@
 
 .bannerContainer {
   position: relative;
-  width: 100%;
+  width: 680px;
   max-width: 550px; /* 최대 폭 설정 */
-  margin: 10px auto;  
+  margin-left: 55px;
   border-radius: 10px; /* 둥근 모서리 */
   overflow: hidden; /* 배너가 컨테이너를 넘지 않도록 설정 */
   box-sizing: border-box; /* 패딩을 포함한 크기 계산 */
