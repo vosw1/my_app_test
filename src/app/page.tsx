@@ -33,6 +33,7 @@ const coupons = [
     condition: '리뷰작성 시',
     status: 'claimed',
   },
+<<<<<<< HEAD
   // {
   //   topImageSrc: '/images/coupon3.png',
   //   clipImageSrc: '/images/user2.png',
@@ -75,6 +76,50 @@ const coupons = [
   //   condition: '리뷰작성 시',
   //   status: 'available',
   // },
+=======
+  {
+    topImageSrc: '/images/coupon3.png',
+    clipImageSrc: '/images/user2.png',
+    userName: '오만원더통신할인센터',
+    category: '인터넷가입',
+    offerText: '사은품 추가 증정',
+    expirationDate: '2024년 05월 31일까지',
+    remainingCount: 5,
+    condition: '리뷰작성 시',
+    status: 'available',
+  },
+  {
+    topImageSrc: '/images/coupon4.png',
+    clipImageSrc: '/images/user2.png',
+    userName: '이가요리족보야',
+    category: '족발 보쌈',
+    offerText: '탄산음료 1병 무료',
+    expirationDate: '2024년 05월 31일까지',
+    condition: '구매 시',
+    status: 'available',
+  },
+  {
+    topImageSrc: '/images/coupon4.png',
+    clipImageSrc: '/images/user2.png',
+    userName: '이가요리족보야',
+    category: '족발 보쌈',
+    offerText: '탄산음료 1병 무료',
+    expirationDate: '2024년 05월 31일까지',
+    condition: '구매 시',
+    status: 'available',
+  },
+  {
+    topImageSrc: '/images/coupon3.png',
+    clipImageSrc: '/images/user2.png',
+    userName: '오만원더통신할인센터',
+    category: '인터넷가입',
+    offerText: '사은품 추가 증정',
+    expirationDate: '2024년 05월 31일까지',
+    remainingCount: 5,
+    condition: '리뷰작성 시',
+    status: 'available',
+  },
+>>>>>>> 25fdbfbc09011e460a5f318e12672eb4e672d86c
 ];
 
 const itemsPerPage = 4; // 페이지당 아이템 수

@@ -35,6 +35,7 @@ const AppBar: React.FC = () => {
           </svg>
         </button>
 
+<<<<<<< HEAD
         <div className={`${styles.dropdownMenu} ${isDropdownOpen ? styles.show : ''}`}>
           {regions.map(region => (
             <button
@@ -46,6 +47,21 @@ const AppBar: React.FC = () => {
             </button>
           ))}
         </div>
+=======
+        {isDropdownOpen && (
+          <div className={styles.dropdownMenu}>
+            {regions.map(region => (
+              <button
+                key={region}
+                onClick={() => handleRegionSelect(region)}
+                className={`${styles.dropdownItem} ${region === selectedRegion ? styles.selectedDropdownItem : ''}`}
+              >
+                {region}
+              </button>
+            ))}
+          </div>
+        )}
+>>>>>>> 25fdbfbc09011e460a5f318e12672eb4e672d86c
       </div>
       
       {/* 알림 아이콘 */}

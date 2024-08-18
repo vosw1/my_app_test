@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 /* appbar.module.css */
+=======
+.header {
+    width: 480px;
+    width: 100%; /* 전체 화면 폭을 사용하여 중앙 정렬 */
+    margin: 0 auto; /* 화면 중앙 정렬 */
+}
+>>>>>>> 25fdbfbc09011e460a5f318e12672eb4e672d86c
 
 .appbar {
   background-color: #ffffff; /* 흰색 배경 */
