@@ -41,7 +41,7 @@ const AppBar: React.FC = () => {
               <button
                 key={region}
                 onClick={() => handleRegionSelect(region)}
-                className={styles.dropdownItem}
+                className={`${styles.dropdownItem} ${region === selectedRegion ? styles.selectedDropdownItem : ''}`}
               >
                 {region}
               </button>
