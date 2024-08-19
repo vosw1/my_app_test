@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import ItemList from './components/item_list';
 import EventBanner from './components/event_banner';
 import CouponCardList from './components/coupon_card_list';
+import Footer from './components/footer';
+
 
 const banners = [
   { imageSrc: '/images/banner1.png', altText: 'Banner 1' },
@@ -120,6 +122,7 @@ const coupons = [
 ];
 
 const itemsPerPage = 4; // 페이지당 아이템 수
+const bottomNavHeight = 100; // 바텀 네비게이션의 높이(px)
 
 export default function HomePage() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -135,24 +138,18 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col min-h-screen font-sans">
-      {/* 메인 콘텐츠 */}
-      <main className="flex-1 flex flex-col p-4">
+      <main className="flex-1 flex flex-col p-4" style={{ paddingBottom: `${bottomNavHeight}px` }}>
         <ItemList />
-        {/* 이벤트 배너 */}
         <EventBanner banners={banners} />
-
-        {/* 인기 쿠폰 */}
-        <h1 style={{ paddingTop: '30px', paddingLeft:'15px'}} className="text-2xl font-bold">인기 쿠폰</h1>
+        <h1 style={{ paddingTop: '30px', paddingLeft: '15px' }} className="text-2xl font-bold">인기 쿠폰</h1>
         <CouponCardList
           coupons={currentCoupons}
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={handlePageChange}
         />
+        <Footer />
       </main>
-
-      {/* 푸터 */}
-      <footer />
     </div>
   );
 }

@@ -16,7 +16,7 @@
     justify-content: center; /* 가로 가운데 정렬 */
     align-items: center; /* 세로 가운데 정렬 */
     gap: 100px; /* 버튼과 텍스트 사이 여백 100px */
-    margin-top: 2rem; /* 네비게이션 상단 여백 */
+    margin: 2rem 0; /* 네비게이션 상단 여백 */
 }
 
 /* 페이지 버튼 */

@@ -32,7 +32,7 @@
       white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
     text-overflow: ellipsis; /* 넘치는 부분을 '...'으로 표시 */
     font-size: 20px;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 /* 클립 이미지, 사용자 이름, 분류 */
@@ -64,7 +64,7 @@
     display: flex; /* flexbox 사용 */
     flex-direction: column; /* 세로 방향 정렬 */
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 5px 20px;
 
 }
 

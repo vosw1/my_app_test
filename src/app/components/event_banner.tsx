@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import styles from './event_banner.module.css'; // 스타일 파일
+import styles from './event_banner.module.css';
 
 interface Banner {
   imageSrc: string;
