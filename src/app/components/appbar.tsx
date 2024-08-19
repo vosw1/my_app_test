@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { useState } from 'react';
 import styles from './appbar.module.css'; // CSS 모듈 임포트
@@ -15,32 +15,32 @@ const AppBar: React.FC = () => {
   };
 
   return (
-    <header className={styles.appbar}>
+    <header className={`flex justify-between items-center p-4 bg-white text-gray-800 relative ${styles.appbar}`}>
       {/* 쿠폰 아이콘 */}
       <img 
         src="/images/coupon.png" 
         alt="Coupon Icon" 
-        className={styles.couponIcon} 
+        className={`w-24 h-auto ${styles.couponIcon}`} 
       />
 
       {/* 지역 선택 버튼 */}
-      <div className={styles.dropdownContainer}>
+      <div className={`relative ${styles.dropdownContainer}`}>
         <button
           onClick={() => setDropdownOpen(!isDropdownOpen)}
-          className={styles.regionButton}
+          className={`flex items-center p-2 px-4 bg-white border border-white rounded-md cursor-pointer whitespace-nowrap ${styles.regionButton}`}
         >
-          <div className={styles.regionText}>{selectedRegion}</div>
-          <svg className={styles.dropdownIcon} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <div className={`text-2xl font-bold mr-2 ${styles.regionText}`}>{selectedRegion}</div>
+          <svg className={`w-6 h-6 stroke-gray-800 ${styles.dropdownIcon}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
         
-        <div className={`${styles.dropdownMenu} ${isDropdownOpen ? styles.show : ''}`}>
+        <div className={`${isDropdownOpen ? 'block' : 'hidden'} absolute w-1/5 bg-white border border-white rounded-md shadow-md max-h-72 overflow-y-auto ${styles.dropdownMenu}`}>
           {regions.map(region => (
             <button
               key={region}
               onClick={() => handleRegionSelect(region)}
-              className={`${styles.dropdownItem} ${region === selectedRegion ? styles.selectedDropdownItem : ''}`}
+              className={`text-2xl block w-full text-left py-2 px-4 cursor-pointer ${region === selectedRegion ? 'bg-blue-100' : 'bg-white'} ${styles.dropdownItem}`}
             >
               {region}
             </button>
@@ -50,7 +50,7 @@ const AppBar: React.FC = () => {
       
       {/* 알림 아이콘 */}
       <svg 
-        className={styles.notificationIcon} 
+        className={`w-12 h-auto ${styles.notificationIcon}`} 
         fill="none" 
         stroke="currentColor" 
         viewBox="0 0 24 24" 
