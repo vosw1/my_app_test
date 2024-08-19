@@ -1,37 +1,35 @@
-/* search.module.css */
 .searchContainer {
-    position: relative;
-    width: 700px;
-    padding: 20px;
-  }
-  
-  .searchInner {
-    padding: 15px;
-    display: flex;
-    width: 95%;
-    align-items: center;
-    border: 2px solid #007bff; /* 파란색 테두리 */
-    border-radius: 0.5rem; /* 둥근 모서리 */
-  }
-  
-  .searchIcon {
-    margin-left: 0.75rem; /* 아이콘과 입력 필드 간의 여백 */
-    color: lightgray; /* 아이콘 색상 */
-    font-size: 50px; /* 아이콘 크기 */
-  }
-  
-  .searchInput {
-    width: 100%; /* 입력 필드가 부모 컨테이너의 전체 너비를 차지하도록 설정 */
-    padding: 1rem; /* 패딩 설정 */
-    padding-left: 15px; /* 왼쪽 패딩을 추가하여 아이콘과 텍스트 간의 간격을 설정 */
-    border: none; /* 기본 테두리를 제거 */
-    font-size: x-large;
-    color: lightgray;
-    border-radius: 0.5rem; /* 둥근 모서리 */
-    outline: none; /* 기본 아웃라인 제거 */
-  }
-  
-  .searchInput:focus {
-    border-color: #0056b3; /* 포커스 시 테두리 색상 변경 */
-  }
-  
+  position: relative;
+  width: 700px;
+  padding: 20px;
+}
+
+.searchInner {
+  padding: 15px;
+  display: flex;
+  width: 95%;
+  align-items: center;
+  border: 2px solid #007bff; /* 파란색 테두리 */
+  border-radius: 0.5rem; /* 둥근 모서리 */
+}
+
+.searchIcon {
+  margin-left: 0.75rem; /* 아이콘과 입력 필드 간의 여백 */
+  color: lightgray; /* 아이콘 색상 */
+  font-size: 50px; /* 아이콘 크기 */
+}
+
+.searchInput {
+  width: 100%; /* 입력 필드가 부모 컨테이너의 전체 너비를 차지하도록 설정 */
+  padding: 1rem; /* 패딩 설정 */
+  padding-left: 15px; /* 왼쪽 패딩을 추가하여 아이콘과 텍스트 간의 간격을 설정 */
+  border: none; /* 기본 테두리를 제거 */
+  font-size: x-large;
+  color: lightgray;
+  border-radius: 0.5rem; /* 둥근 모서리 */
+  outline: none; /* 기본 아웃라인 제거 */
+}
+
+.searchInput:focus {
+  border-color: #0056b3; /* 포커스 시 테두리 색상 변경 */
+}
