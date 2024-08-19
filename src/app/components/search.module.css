@@ -8,7 +8,7 @@
   .searchInner {
     padding: 15px;
     display: flex;
-    width: 600px;
+    width: 94%;
     align-items: center;
     border: 2px solid #007bff; /* 파란색 테두리 */
     border-radius: 0.5rem; /* 둥근 모서리 */

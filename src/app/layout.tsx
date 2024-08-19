@@ -18,7 +18,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             {children}
           </main>
 
-          <Footer />
+          <footer />
           <BottomNav />
         </div>
       </body>
