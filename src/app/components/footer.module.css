@@ -17,17 +17,18 @@
 
 .textContent {
     @apply text-center text-2xl text-gray-600; /* 가운데 정렬, 글자 크기와 색상 설정 */
+    font-size: 18px; /* 글자 크기 18px 설정 */
 }
 
 .privacyText {
     @apply text-center text-sm text-gray-600; /* 가운데 정렬, 위쪽 여백, 글자 크기 15px, 색상 설정 */
     font-size: 18px; /* 글자 크기 18px 설정 */
-    padding: 10px 0; /* 각 셀의 내부 여백을 5px로 설정 */
+    padding: 10px 0; /* 위아래 여백 10px */
 }
 
 .businessInfoContent {
     @apply w-11/12 mx-auto py-4 text-gray-600 text-lg; /* 너비 설정, 가운데 정렬, 내부 여백, 글자 색상과 크기 설정 */
-    padding: 20px 10px; /* 좌우 여백 10px, 위아래 여백 20px */
+    padding: 20px 0; /* 좌우 여백 0px, 위아래 여백 20px */
 }
 
 .businessInfoContent table {
@@ -36,7 +37,7 @@
 
 .businessInfoContent td {
     @apply border-b border-gray-300; /* 하단 테두리와 색상 설정 */
-    padding: 5px 0; /* 각 셀의 내부 여백을 5px로 설정 */
+    padding: 5px 0; /* 각 셀의 내부 여백을 좌우 0px, 상하 5px로 설정 */
 }
 
 .businessInfoContent tr {
