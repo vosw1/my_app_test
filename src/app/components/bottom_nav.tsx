@@ -8,21 +8,22 @@ import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import PersonIcon from '@mui/icons-material/Person';
 import Link from 'next/link'; 
 import styles from './bottom_nav.module.css'; 
+
 const BottomNav: React.FC = () => {
   return (
-    <Box className={styles.bottomNav}>
+    <Box className={`${styles.bottomNav} flex justify-around items-center`}>
       {[
-        { label: '홈', icon: <HomeOutlinedIcon className={styles.icon} />, href: '/' },
-        { label: '요청 내역', icon: <AssignmentIcon className={styles.icon} />, href: '/requests' },
-        { label: '채팅', icon: <ChatBubbleOutlineIcon className={styles.icon} />, href: '/chat' },
-        { label: '내 정보', icon: <PersonIcon className={styles.icon} />, href: '/profile' }
+        { label: '홈', icon: <HomeOutlinedIcon className={`${styles.icon} text-gray-500`} />, href: '/' },
+        { label: '요청 내역', icon: <AssignmentIcon className={`${styles.icon} text-gray-500`} />, href: '/requests' },
+        { label: '채팅', icon: <ChatBubbleOutlineIcon className={`${styles.icon} text-gray-500`} />, href: '/chat' },
+        { label: '내 정보', icon: <PersonIcon className={`${styles.icon} text-gray-500`} />, href: '/profile' }
       ].map((item) => (
         <Box key={item.label} className={styles.navItem}>
-          <Link href={item.href}>
-            <IconButton aria-label={item.label} className={styles.icon}>
+          <Link href={item.href} className="no-underline flex flex-col items-center">
+            <IconButton aria-label={item.label} className={`${styles.icon} p-0 hover:text-blue-500`}>
               {item.icon}
             </IconButton>
-            <Typography variant="caption" className={styles.text}>
+            <Typography variant="caption" className={`${styles.text} hover:text-blue-500`}>
               {item.label}
             </Typography>
           </Link>
