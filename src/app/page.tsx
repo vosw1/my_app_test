@@ -142,7 +142,7 @@ export default function HomePage() {
         <EventBanner banners={banners} />
 
         {/* 인기 쿠폰 */}
-        <h1 style={{ paddingTop: '40px', paddingLeft:'15px'}} className="text-2xl font-bold">인기 쿠폰</h1>
+        <h1 style={{ paddingTop: '30px', paddingLeft:'15px'}} className="text-2xl font-bold">인기 쿠폰</h1>
         <CouponCardList
           coupons={currentCoupons}
           currentPage={currentPage}

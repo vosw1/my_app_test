@@ -3,9 +3,9 @@
     width: 680px;
     grid-template-columns: repeat(4, 1fr); /* 4개의 열로 아이템을 배치합니다 */
     gap: 37px; /* 아이템 간의 간격을 설정합니다 */
-    padding: 16px; /* 그리드의 패딩 */
+    padding: 0 16px; /* 그리드의 패딩 */
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .itemLink {
