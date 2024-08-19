@@ -27,7 +27,7 @@ const CouponCardList: React.FC<CouponCardListProps> = ({
 }) => {
   return (
     <div className="min-h-screen bg-gray-100 py-8">
-      <div className={styles.gridContainer}> {/* CSS 모듈에서 새로운 클래스 이름 사용 */}
+      <div className={styles.gridContainer}>
         {coupons.map((coupon, index) => (
           <CouponCard
             key={index}
@@ -44,24 +44,25 @@ const CouponCardList: React.FC<CouponCardListProps> = ({
         ))}
       </div>
 
-      {/* 페이지 네비게이션 */}
-      <div className="mt-8 flex justify-center items-center space-x-4">
+      <div className={styles.pageNavigation}>
         {/* 이전 페이지 버튼 */}
         <button
-          className={`text-blue-500 hover:text-blue-700 ${currentPage === 1 ? 'cursor-not-allowed opacity-50' : ''}`}
+          className={`${styles.pageButton} ${currentPage === 1 ? 'cursor-not-allowed opacity-50' : ''}`}
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage === 1}
         >
-          &lt; {/* '<' 아이콘 */}
+          &lt;
         </button>
-        <span className="text-gray-500">{currentPage}/{totalPages}</span> {/* 현재 페이지 / 총 페이지 수 */}
+        <span className={styles.pageText}>
+          {currentPage}/{totalPages}
+        </span>
         {/* 다음 페이지 버튼 */}
         <button
-          className={`text-blue-500 hover:text-blue-700 ${currentPage === totalPages ? 'cursor-not-allowed opacity-50' : ''}`}
+          className={`${styles.pageButton} ${currentPage === totalPages ? 'cursor-not-allowed opacity-50' : ''}`}
           onClick={() => onPageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
         >
-          &gt; {/* '>' 아이콘 */}
+          &gt;
         </button>
       </div>
     </div>
