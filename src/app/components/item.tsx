@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './Item_list.module.css'; // CSS 모듈 파일 가져오기
+import styles from './item_list.module.css';
 
 interface ItemProps {
   icon: React.ReactElement;

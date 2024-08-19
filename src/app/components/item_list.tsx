@@ -9,10 +9,9 @@ import {
   faCar,
   faCoffee,
   faUtensils,
-  faBuilding,  
-  faShieldAlt  
 } from '@fortawesome/free-solid-svg-icons';
-import styles from './item_list.module.css'; 
+import Link from 'next/link';
+import styles from './item_list.module.css'; // 올바른 경로로 수정
 
 const items = [
   { icon: <FontAwesomeIcon icon={faTruck} />, text: '이사/청소', href: '/moving-cleaning' },
@@ -29,14 +28,14 @@ const ItemList: React.FC = () => {
   return (
     <div className={styles.itemGrid}>
       {items.map((item, index) => (
-        <a key={index} href={item.href} className={styles.itemLink}>
+        <Link key={index} href={item.href} className={`${styles.itemLink} hover:bg-gray-200`}>
           <div className={styles.itemIcon}>
             {item.icon}
           </div>
           <div className={styles.itemText}>
             {item.text}
           </div>
-        </a>
+        </Link>
       ))}
     </div>
   );
