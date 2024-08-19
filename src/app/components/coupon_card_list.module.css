@@ -1,0 +1,11 @@
+/* 카드 컨테이너 */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2열 레이아웃 */
+    gap: 16px; /* 카드 간의 간격 설정 */
+    padding:0 16px; /* 컨테이너 패딩 */
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-content: center; /* 세로 가운데 정렬 */
+    max-width: 680px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+}

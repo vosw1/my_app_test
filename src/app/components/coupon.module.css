@@ -1,15 +1,13 @@
-/* 전체 카드 */
+/* 카드 */
 .card {
-    width: 300px;
-    height: 455px;
+    height: 455px; /* 카드의 높이 설정 */
     background-color: white;
     border: 1px solid lightgrey;
-    border-radius: 0.5rem;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-  }
+    box-sizing: border-box; /* 카드의 패딩 및 테두리를 포함한 크기 계산 */
+}
 
 /* 상단 이미지 */
 .topImageWrapper {

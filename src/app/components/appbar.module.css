@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-/* appbar.module.css */
-=======
-.header {
-    width: 480px;
-    width: 100%; /* 전체 화면 폭을 사용하여 중앙 정렬 */
-    margin: 0 auto; /* 화면 중앙 정렬 */
-}
->>>>>>> 25fdbfbc09011e460a5f318e12672eb4e672d86c
-
 .appbar {
   background-color: #ffffff; /* 흰색 배경 */
   color: #333333; /* 텍스트 색상 */
@@ -83,4 +73,9 @@
 .notificationIcon {
   width: 50px; /* 알림 아이콘 크기 */
   height: auto; /* 비율에 맞게 높이 조정 */
+}
+
+/* 앱바 아이템 간의 여백 조정 */
+.appbar > * {
+  margin: 0 8px; /* 아이템 간의 간격 조정 */
 }
