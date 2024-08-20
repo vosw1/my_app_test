@@ -123,7 +123,7 @@ const coupons = [
 ];
 
 const itemsPerPage = 4; // 페이지당 아이템 수
-const bottomNavHeight = 100; // 바텀 네비게이션의 높이(px)
+const bottomNavHeight = 120; // 바텀 네비게이션의 높이(px)
 
 export default function HomePage() {
   const [currentPage, setCurrentPage] = useState(1);
