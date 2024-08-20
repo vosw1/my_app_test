@@ -5,6 +5,7 @@ import ItemList from './components/item_list';
 import EventBanner from './components/event_banner';
 import CouponCardList from './components/coupon_card_list';
 import Footer from './components/footer';
+import SearchBar from './components/search';
 
 
 const banners = [
@@ -139,6 +140,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen font-sans">
       <main className="flex-1 flex flex-col p-4" style={{ paddingBottom: `${bottomNavHeight}px` }}>
+        <SearchBar />
         <ItemList />
         <EventBanner banners={banners} />
         <h1 style={{ paddingTop: '30px', paddingLeft: '15px' }} className="text-2xl font-bold">인기 쿠폰</h1>

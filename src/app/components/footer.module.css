@@ -13,7 +13,8 @@
 .button {
     @apply bg-white border-none text-gray-600 text-2xl font-bold px-4 py-2; /* 버튼 배경색, 테두리 없음, 글자 색상과 크기 설정 */
     margin: 0 10px; /* 버튼 간의 여백 */
-}
+    cursor: pointer; /* 포인터 커서 적용 */
+  }
 
 .textContent {
     @apply text-center text-2xl text-gray-600; /* 가운데 정렬, 글자 크기와 색상 설정 */

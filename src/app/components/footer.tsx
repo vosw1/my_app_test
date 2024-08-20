@@ -5,7 +5,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // 아이콘 임포
 import styles from './footer.module.css'; // CSS 모듈 임포트
 
 const Footer: React.FC = () => {
-  const [selectedSection, setSelectedSection] = useState<'terms' | 'privacy' | 'business' | null>(null);
+  const [selectedSection, setSelectedSection] = useState<'terms' | 'privacy' | 'business' | null>('privacy');
   const [showBusinessInfo, setShowBusinessInfo] = useState(false);
 
   // 사업자 정보 표시/숨기기 토글 함수
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                 </tr>
                 <tr>
                   <td className={styles.label}>포스팅사업자</td>
-                  <td className={styles.value}>땡땡</td>
+                  <td className={styles.value}>땡땡땡</td>
                 </tr>
               </tbody>
             </table>

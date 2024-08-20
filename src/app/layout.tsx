@@ -10,7 +10,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <body className="flex flex-col min-h-screen font-sans">
         <div className="flex flex-col min-h-screen">
           <AppBar />
-          <SearchBar />
           <main className="flex-1 p-4 overflow-auto main-content">
             {children}
           </main>
