@@ -14,8 +14,8 @@ import Link from 'next/link';
 import styles from './item_list.module.css'; // 올바른 경로로 수정
 
 const items = [
-  { icon: <FontAwesomeIcon icon={faTruck} />, text: '이사/청소', href: '/moving-cleaning' },
-  { icon: <FontAwesomeIcon icon={faWrench} />, text: '설치/수리', href: '/installation-repair' },
+  { icon: <FontAwesomeIcon icon={faTruck} />, text: '이사/청소', href: '/moving_cleaning' },
+  { icon: <FontAwesomeIcon icon={faWrench} />, text: '설치/수리', href: '/installation_repair' },
   { icon: <FontAwesomeIcon icon={faWifi} />, text: '인터넷 가입', href: '/internet' },
   { icon: <FontAwesomeIcon icon={faMobileAlt} />, text: '모바일', href: '/mobile' },
   { icon: <FontAwesomeIcon icon={faBriefcase} />, text: '외주', href: '/outsourcing' },
